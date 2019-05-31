@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let sym = "";
+        for (let i = 1; i<=5;i++){
+            document.write("<Br>");
+            for (let j = 1;j < i+1;j++){
+                document.write("*");
+            }
+        }
+        sym = "<br><br>";
+        document.write(sym);
+        for (let i = 5; i>=1;i--){
+            document.write("<Br>");
+            for (let j = 1;j < i+1;j++){
+                document.write("*");
+            }
+        }
+        document.write(sym);
+        let n = 11;
+        let m = -1;
+        for (let i =0; i<5; i++){
+            if (n>0){
+                n=n-2;
+                m++;
+                document.write("<br>");
+                for (let k = 0; k < m; k++){
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            for (let j = 0; j < n; j++){
+                document.write("*");
+            }
+        }
+        for (let i =1; i<5; i++){
+            if (n<=11){
+                n=n+2;
+                m--;
+                document.write("<br>");
+                for (let k = 0; k < m; k++){
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            for (let j = 0; j < n; j++){
+                document.write("*");
+            }
+        }
+
+        document.write(sym);
+        for (let i =0; i<9; i++){
+            if (n>0){
+                n=n-1;
+                m++;
+                document.write("<br>");
+                for (let k = 0; k < m; k++){
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            for (let j = 0; j < n; j++){
+                document.write("*");
+            }
+        }
+        for (let i =0; i<9; i++){
+            if (n<=11){
+                n=n+1;
+                m--;
+                document.write("<br>");
+                for (let k = 0; k < m; k++){
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            for (let j = 0; j < n; j++){
+                document.write("*");
+            }
+        }
+    </script>
+</body>
+</html>
