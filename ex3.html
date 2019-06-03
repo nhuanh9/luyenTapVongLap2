@@ -50,9 +50,9 @@
                 document.write("*");
             }
         }
-
+        n = 6;
         document.write(sym);
-        for (let i =0; i<9; i++){
+        for (let i =0; i<5; i++){
             if (n>0){
                 n=n-1;
                 m++;
@@ -65,8 +65,10 @@
                 document.write("*");
             }
         }
-        for (let i =0; i<9; i++){
-            if (n<=11){
+        document.write(sym);
+        n=0;
+        for (let i =0; i<5; i++){
+            if (n<=6){
                 n=n+1;
                 m--;
                 document.write("<br>");
@@ -78,6 +80,8 @@
                 document.write("*");
             }
         }
+
+
     </script>
 </body>
 </html>
